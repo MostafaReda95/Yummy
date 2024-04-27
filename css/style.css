@@ -1,0 +1,102 @@
+/* Set body background color, text color, and prevent overflow */
+body {
+    background-color: #0D0D0D;
+    color: #f9f6f6 !important;
+    /* !important used for higher specificity */
+    overflow: hidden;
+    /* Prevent horizontal scrollbars */
+}
+
+/* Style for navigation tab */
+.nav-tab {
+    background-color: #0D0D0D;
+}
+
+/* Logo styling */
+.logo {
+    width: 50px;
+}
+
+/* Set cursor as pointer for all elements with 'i' tag */
+i {
+    cursor: pointer;
+}
+
+/* Styling for input fields */
+.contantInput,
+input {
+    box-shadow: 1px 1px 3px white;
+    /* Apply white box shadow */
+}
+
+/* Styling for valid input fields */
+.is-valid {
+    border-bottom: #28a745 solid 1px !important;
+    /* Green border bottom for valid inputs */
+    box-shadow: 1px 1px 3px #28a745 !important;
+    /* Green box shadow for valid inputs */
+}
+
+/* Styling for inner loading screen */
+.inner-loading-screen {
+    position: absolute;
+    /* Position absolute to overlay content */
+    z-index: 9;
+    /* Ensure it's above other content */
+    background-color: #0D0D0D;
+    /* Dark background */
+    display: flex;
+    /* Flex layout */
+    max-height: 100vh;
+    /* Limit height to viewport height */
+}
+
+/* Styling for meal layer */
+.meal-layer {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: #f9f6f6ca;
+    /* Semi-transparent white background */
+    top: 100%;
+    /* Initially hidden below the meal */
+    transition: .5s;
+    /* Smooth transition */
+}
+
+/* Slide meal-layer up on hover */
+.meal:hover .meal-layer {
+    top: 0;
+}
+
+/* Ensure side navigation menu is above other content */
+.side-nav-menu {
+    z-index: 99;
+}
+
+/* Set cursor as pointer for elements with class 'cursor-pointer' */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Adjust width for alerts to fit content */
+.alert {
+    width: fit-content;
+}
+
+/* Styling for loading screen */
+.loading-screen {
+    z-index: 999;
+    /* Ensure it's above other content */
+    display: flex;
+    /* Flex layout */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 800px) {
+    body {
+        padding: 0 !important;
+        /* Remove body padding on small screens */
+    }
+}
